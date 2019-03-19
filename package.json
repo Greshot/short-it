@@ -1,0 +1,23 @@
+{
+  "name": "shortener",
+  "version": "1.0.0",
+  "description": "Shortener Url Service",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "shortener",
+    "url",
+    "redirect"
+  ],
+  "author": "Carlos Hurtado",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.19",
+    "shortid": "^2.2.14",
+    "valid-url": "^1.0.9"
+  }
+}
