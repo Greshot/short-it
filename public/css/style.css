@@ -50,3 +50,7 @@ button.form__item:focus {
   outline-color: #247ba0;
   outline-width: 2px;
 }
+
+button.form__item:disabled {
+  cursor: not-allowed;
+}

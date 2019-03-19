@@ -11,7 +11,7 @@
     <div id="app">
       <form @submit="shortenUrl" class="form">
         <h1>Short.it</h1>
-        <input type="url" v-model="url" class="form__item" />
+        <input type="url" v-model="url" class="form__item" required />
         <div v-if="error != ''" class="form__item">
           {{ error }}
         </div>
@@ -23,7 +23,9 @@
           class="form__item"
           >{{ shortened_url }}</a
         >
-        <button type="submit" class="form__item">Shorten!</button>
+        <button :disabled="url == ''" type="submit" class="form__item">
+          Shorten!
+        </button>
       </form>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
