@@ -10,6 +10,7 @@
   <body>
     <div id="app">
       <form @submit="shortenUrl" class="form">
+        <h1>Short.it</h1>
         <input type="url" v-model="url" class="form__item" />
         <div v-if="error != ''" class="form__item">
           {{ error }}
